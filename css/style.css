@@ -1,0 +1,275 @@
+/* Remove default browser spacing */
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    display: grid;
+    background-color: #23272e;
+    grid-template-columns: 200px  1fr;
+    grid-template-rows: 30px 1fr 30px;
+    grid-template-areas: "header header" "aside main" "footer footer";
+    height: 100%;
+    width: 100%;
+    font-size: 13px
+    
+}
+
+header{
+    grid-area: header;
+    /* background-color: #23272e; */
+    
+    
+    display: flex;
+}
+
+
+/* Top menu bar */
+.top-bar {
+    height: 35px;
+    /* width: 300px; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+    background-color:#23272e;
+    border-top: 1px solid #717884;
+    
+}
+
+.vs-logo img {
+    /* width:25px; */
+    height: 25px;
+    /* margin: 4px; */
+}
+    
+
+
+.menu{
+    display: flex;
+    gap: 18px;
+    font-size: 13px;
+    color: #717884;
+}
+
+/* Workspace layout */
+.workspace {
+    /* display: flex */
+    /* height: calc(100vh - 69px); */
+    /* width: 100%; */
+    
+}
+
+aside {
+    grid-area: aside;
+    background-color:#1e2227;
+    display: flex;
+    
+}
+/* Far left icons*/
+.activity-bar {
+width: 55%;
+height: 120%;
+flex: 0 0 55px;
+flex-direction: column;
+background-color:#1e2227;
+border-right: 1px solid #717884;
+display: flex;
+gap: 10px;
+padding: 15px;
+/* justify-content: space-between ; */
+
+
+
+}
+
+/* Explorer sidebar */
+.explorer {
+    width: 150px;
+    height: 120%;
+    /* flex:0 0 280px; */
+    background-color:#1e2227;
+    border-right: 1px solid #717884;
+    position: relative
+    font-size: 13px;
+    padding: 15px 10px;
+    
+
+}
+
+.explorer h2 {
+    /* margin-bottom: 20px; */
+    font-size: 15px;
+    color:#717884;
+    
+} 
+
+details {
+    /* margin: 10px 0; */
+}
+summary {
+    cursor:pointer;
+    padding: 5px;
+    font-weight: thin;
+    color:#717884;
+
+
+}
+
+
+
+
+.sidebar-bottom{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+
+main {
+    grid-area: main;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    color: #1e2227;
+    /* background-color: #23272e; */
+    
+}
+/* Main editor area */
+.editor {
+    display: flex;
+    flex: 1 ;
+    min-width: 0;
+    background-color: #23272e;
+    /* width: 100px; */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+
+
+}
+
+.welcome {
+    /* text-align: left; */
+}
+
+.big-logo {
+    font-size: 130px;
+    color:#23272e;
+    text-align: center;
+    /* margin-bottom: 30px; */
+}
+
+.big-logo img{
+    width: 250px;
+    height: 250px;
+    /* margin-bottom: 20px; */
+    opacity: 0.15;
+    
+}
+
+
+.shortcut  {
+margin: 12px 0;
+font-size: 13px;
+/* gap: 28px; */
+/* justify-content: space-between; */
+}
+
+
+   p { color:#717884;
+    font-weight: thin;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+kbd {
+    justify-items: space-between;
+    display:inline-block;
+    margin-bottom: 20px;
+    padding: 3px 6px;
+    background-color:#23272e;
+     
+    border: 1px solid #717884;
+    
+}
+footer{
+    grid-area: footer;
+    background-color: #1e2227;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+/* Bottom status bar */
+.status-bar {
+    height: 24px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    background-color: #1e2227;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 12px;
+    font-size: 11px;
+    z-index: 10;
+}
+
+.status-left,
+.status-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+.status-bar span {
+    cursor: pointer;
+}
+
+.status-bar span:hover {
+    background-color:#717884;
+}
+    
+    
+    
+    
+    
+
+    
+
+    
+
+    
+    
+
+
+    
+    
+
+    
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
